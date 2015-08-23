@@ -1,4 +1,4 @@
-IDIR = ./src/include
+IDIR = ./include
 ODIR = ./obj
 LDIR = ./lib
 SRC = ./src
