@@ -1,4 +1,4 @@
-IDIR = ./include
+IDIR = ./src/include
 ODIR = ./obj
 LDIR = ./lib
 SRC = ./src
@@ -8,10 +8,10 @@ CC = gcc
 CFLAGS = -I$(IDIR)
 LIBS = -lm
 
-_DEPS =
+_DEPS = solver.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = hello.o
+_OBJ = main.o solver.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 $(ODIR)/%.o: $(SRC)/%.c $(DEPS)
